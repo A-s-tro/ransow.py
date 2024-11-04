@@ -1,5 +1,5 @@
 # to run the file in the Linux   | sudo python ransom.py decrypt astro.txt jasee.txt ow | sudo python ransom.py encrypt astro.txt  ow
-
+# for windows 
 
 import sys
 from os import remove
