@@ -4,32 +4,7 @@ import shutil
 from cryptography.fernet import Fernet, InvalidToken # type: ignore
 
 def encrypt(filename, overwrite=True, manual=False, filekey=None):
-    """ Encrypt a file. 
-    'filename' is the name of the file 
-    to be encrypted present in the current script folder 
-    (with its extension). 
-    
-    'overwrite=True' : when last arg is 'ow' the file will be 
-    completely rewritten in encrypted data and therefore will lose its 
-    integrity. When last arg is 'c' instead of 'ow' it creates a copy 
-    of the file in the current folder before the overwrite operation. 
-    For example from Powershell :
 
-    python filecrypt.py encrypt img.jpg ow
-    python filecrypt.py encrypt img.jpg c
-
-    'manual = False' : When the 1st arg is 'encrypt', by default the function 
-    will automatically generate a "filekey.key" file in the current script 
-    folder in which is a randomly generated secret key. This file should be kept safe.
-    'manual == True' : When 1st arg is 'encryptm' a custom keyfile must be given 
-    to encrypt the file
-
-    'keyfile' : Custom keyfile to encrypt the file if manual is True
-
-    Example : 
-
-    python filecrypt.py encryptm img.jpg filekey.txt ow
-    """
     print(f"---- Encryption of {filename} ----")
 
     generated_filekey_name = 'jasee.txt'
