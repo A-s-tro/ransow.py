@@ -1,5 +1,5 @@
 # to run the file in the Linux   | sudo python ransom.py decrypt astro.txt jasee.txt ow | sudo python ransom.py encrypt astro.txt  ow
-# for windows 
+# for windows | python .\ransom.py encrypt .\phone_numbers.md ow  |  python .\ransom.py decrypt .\phone_numbers.md .\jasee.txt
 
 import sys
 from os import remove
